@@ -42,6 +42,7 @@ public class vlPanel extends JPanel {
 	 * Create the panel.
 	 */
 	public vlPanel() {
+		setBackground(Color.BLACK);
 		setLayout(null);
 
 		lblObenLinks = new JLabel("New label");
@@ -61,11 +62,13 @@ public class vlPanel extends JPanel {
 		add(lblUntenRechts);
 		
 		JPanel panel = new JPanel();
+		panel.setBackground(Color.BLACK);
 		panel.setBorder(new MatteBorder(0, 0, 3, 0, (Color) Color.WHITE));
 		panel.setBounds(10, 11, 302, 37);
 		add(panel);
 		
 		JLabel lblNewLabel = new JLabel("Verkehrslage");
+		lblNewLabel.setForeground(Color.WHITE);
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Arial", Font.BOLD, 20));
 		panel.add(lblNewLabel);
@@ -73,6 +76,7 @@ public class vlPanel extends JPanel {
 		readHereAppKeys();
 
 		setUrls();
+		setBilder();
 	}
 	
 	String mapTileUR, mapTileUL, mapTileOL, mapTileOR;
@@ -346,7 +350,7 @@ public class vlPanel extends JPanel {
 	}
 
 
-	public void setBilder() {
+	private void setBilder() {
 
 		try {
 

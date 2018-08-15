@@ -48,8 +48,6 @@ public class vlGui extends JFrame {
 		vl.setVisible(true);
 		getContentPane().add(vl);
 		
-		vl.setBilder();
-		
 		
 	}
 }
