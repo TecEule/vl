@@ -350,7 +350,7 @@ public class vlPanel extends JPanel {
 	}
 
 
-	private void setBilder() {
+	public void setBilder() {
 
 		try {
 
